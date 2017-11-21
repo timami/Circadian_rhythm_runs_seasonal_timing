@@ -32,8 +32,10 @@ read.monitor = function(data.source, monitor.num)
   return(data)
 }
 
+#read in first file
 all.monitors = read.monitor(data.source = files[1], monitor.num = substr(files[1], nchar(files[1])-4, nchar(files[1])-4))
 
+#read in remaining files and rbind() to original all.monitors data.frame
 for (i in files[-1])
 {
   mon.num <-  substr(i, nchar(i)-4, nchar(i)-4)
