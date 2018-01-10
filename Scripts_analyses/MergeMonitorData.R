@@ -41,4 +41,4 @@ for (i in files[-1])
   mon.num <-  substr(i, nchar(i)-4, nchar(i)-4)
   all.monitors = rbind(all.monitors, read.monitor(data.source = i, monitor.num = substr(i, nchar(i)-4, nchar(i)-4)))
 }
-write.csv(all.monitors, "monitors_combined.csv", row.names=FALSE)
+#write.csv(all.monitors, "monitors_combined.csv", row.names=FALSE)
